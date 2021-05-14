@@ -48,7 +48,7 @@ $(document).ready(function(){
     $("#district").change(function(){
         let district_name = $(this).val();
         $.ajax({
-            url: `${city_data_url}?state_name=${district_name}`,
+            url: `${city_data_url}?district_name=${district_name}`,
             type: 'get',
             dataType: 'json',
 
